@@ -1,10 +1,15 @@
 # Project for demonstrating how to build interactive authentication for Azure Data Lake
 
-Many Business Intelligence and Analytics apps want to use data in Azure Data Lake,ADL, due to the many features of ADL.
+Many Business Intelligence and Analytics apps want to use data in Azure Data Lake Store,ADLS, due to the many features of ADLS.
 
-The goal of this project is to document and demonstrate through example code, how to connect to ADL using some popular analytic tools. We will start with one tool and one code example and then grow the examples to make it easier to use ADL.  
+The goal of this project is to demonstrate how to build applications for human user interaction (interactive user, not a service) with ADLS data and execute various Business Intelligence scenarios and use cases. We will initially create example code using C++ and connect to one popular analytics tool. Next, we will expand the example base to other code (node.js, etc) and other popular analytics tools. 
 
-This project will use Active Diretory for authentication and HDFS, Hadoop File System and will demonstrate those as well.
+This will include: 
+Authentication of Interactive User to ADLS/HDFS layer via Azure AD
+ADLS presents an HDFS interface
+Navigation of ADLS Folder structure and browse data
+CRUD Access to data contents
+Plug in visualization capabilities of choice to fulfill data analysis for Business Intelligence use
 
 ADL enables you to store data of any size, shape, and speed, and do all types of processing and analytics across platforms and languages. It removes the complexities of ingesting and storing all of your data while making it faster to get up and running with batch, streaming, and interactive analytics. Due to the number of separate pieces required to make this work, it became clear that a project to show how to do it would be useful.
 
