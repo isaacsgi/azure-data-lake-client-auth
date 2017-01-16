@@ -40,8 +40,11 @@ Here's a great reference book:
  - [Java SDK](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-java-sdk)
 
 [Securing data in ADLS](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-secure-data)
+
 [Use Curl](http://curl.haxx.se/)
 
-[Used data from here](https://github.com/MicrosoftBigData/usql/tree/master/Examples/Samples/Data/AmbulanceData)
+[Here's where sample data is](https://github.com/MicrosoftBigData/usql/tree/master/Examples/Samples/Data/AmbulanceData)
 
 [What is an Azure AD Tenant?](https://msdn.microsoft.com/en-us/library/azure/jj573650.aspx?#BKMK_WhatIsAnAzureAD)
+
+[If you need to install Azure CLI](https://docs.microsoft.com/en-us/azure/xplat-cli-install)
