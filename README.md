@@ -1,7 +1,5 @@
-##
 
-
-# Project for demonstrating how to build interactive authentication for Azure Data Lake
+## Project for demonstrating how to build interactive authentication for Azure Data Lake
 
 Many Business Intelligence and Analytics apps want to use data in Azure Data Lake Store,ADLS, due to the many features of ADLS.
 
@@ -41,3 +39,5 @@ Here's a great reference book:
  - [Java SDK](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-java-sdk)
 
 [Use Curl](http://curl.haxx.se/)
+
+[What is an Azure AD Tenant?](https://msdn.microsoft.com/en-us/library/azure/jj573650.aspx?#BKMK_WhatIsAnAzureAD)
