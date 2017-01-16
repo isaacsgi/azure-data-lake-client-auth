@@ -1,4 +1,4 @@
-
+##
 
 
 # Project for demonstrating how to build interactive authentication for Azure Data Lake
@@ -28,22 +28,16 @@ Here's a great reference book:
 [Modern authentication with Azure Active Directory for Web applications
 2016, by Bertocci, Vittorio.] (http://mslibrary/SearchCenter/Pages/LibrarySimple.aspx?k=Title%3A%22Modern%20authentication%20with%20Azure%20Active%20Directory%20for%20Web%20applications%22)
 
-Some items of interest:
+##Some items of interest:
 
-##[Setting up Active Directory and Data Lake Store (includes java and .net sample)]
-(https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-end-user-authenticate-using-active-directory )
+[Setting up Active Directory and Data Lake Store (includes java and .net sample)](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-end-user-authenticate-using-active-directory )
 
-## Getting started with Data Lake Storage using REST api
-https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-rest-api 
+[Getting started with Data Lake Storage using REST api](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-rest-api )
 
-##Securing a web API with Azure AD
-https://github.com/Azure-Samples/active-directory-node-webapi
+[Securing a web API with Azure AD](https://github.com/Azure-Samples/active-directory-node-webapi)
 
 ##Here is how to use Azure AD web app to authenticate with ADLS and then perform other operations on ADLS:
- - .Net SDK
-   https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-net-sdk
- - Java SDK
-   https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-java-sdk
+ - [.Net SDK](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-net-sdk)
+ - [Java SDK](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-java-sdk)
 
-Use Curl:
-http://curl.haxx.se/
+[Use Curl](http://curl.haxx.se/)
