@@ -1,6 +1,3 @@
-
-
-
 ## Project for demonstrating how to build interactive authentication for Azure Data Lake
 
 Many Business Intelligence and Analytics apps want to use data in Azure Data Lake Store,ADLS, due to the many features of ADLS.
@@ -42,6 +39,7 @@ Here's a great reference book:
  - [.Net SDK](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-net-sdk)
  - [Java SDK](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-java-sdk)
 
+[Securing data in ADLS](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-secure-data)
 [Use Curl](http://curl.haxx.se/)
 
 [Used data from here](https://github.com/MicrosoftBigData/usql/tree/master/Examples/Samples/Data/AmbulanceData)
