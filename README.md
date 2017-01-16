@@ -1,4 +1,5 @@
 
+
 ## Project for demonstrating how to build interactive authentication for Azure Data Lake
 
 Many Business Intelligence and Analytics apps want to use data in Azure Data Lake Store,ADLS, due to the many features of ADLS.
@@ -30,13 +31,15 @@ Here's a great reference book:
 
 [1.Setting up Active Directory and Data Lake Store (includes java and .net sample)](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-end-user-authenticate-using-active-directory )
 
+[2. Getting started](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-portal)
+
 [Getting started with Data Lake Storage using REST api](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-rest-api )
 
 [Securing a web API with Azure AD](https://github.com/Azure-Samples/active-directory-node-webapi)
 
 ##Here is how to use Azure AD web app to authenticate with ADLS and then perform other operations on ADLS:
  - [.Net SDK](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-net-sdk)
- - [2. Java SDK](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-java-sdk)
+ - [Java SDK](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-java-sdk)
 
 [Use Curl](http://curl.haxx.se/)
 
