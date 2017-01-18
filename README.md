@@ -1,4 +1,4 @@
-## Project for demonstrating how to build interactive authentication for Azure Data Lake
+## Building interactive authentication for Azure Data Lake with Azure AD
 
 Many Business Intelligence and Analytics apps want to use data in Azure Data Lake Store,ADLS, due to the many features of ADLS.
 
