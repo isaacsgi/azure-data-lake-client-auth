@@ -2,7 +2,7 @@
 
 Many Business Intelligence and Analytics apps want to use data in Azure Data Lake Store,ADLS, due to the many features of ADLS.
 
-The goal of this project is to demonstrate how to build applications for human user interaction (interactive user, not a service) with ADLS data and execute various Business Intelligence scenarios and use cases. We will initially create a sample application that demnonstrates an intereactive login and basic access to an Azure Data Lake instance.  Next, we will expand the example base to other code (node.js, etc) and other popular analytics tools. 
+The goal of this project is to demonstrate how to build applications for human user interaction (interactive user, not a service) with ADLS, Azure Data Lake Store, data and execute various Business Intelligence scenarios and use cases. We will initially create a sample application that demonstrates an intereactive login and basic access to an Azure Data Lake instance.  Next, we will expand the example base to other code (node.js, etc). 
 
 This will include: 
 
