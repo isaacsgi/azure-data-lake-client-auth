@@ -27,9 +27,9 @@ Here's a great reference book:
 
 ##For Reference - some items of interest:
 
-[1.Setting up Active Directory and Data Lake Store (includes java and .net sample)](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-end-user-authenticate-using-active-directory )
+[1. Setting up Active Directory and Data Lake Store (includes java and .net sample)](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-end-user-authenticate-using-active-directory )
 
-[2. Getting started - portal, cli's, sdk's](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-portal)
+[2. Getting started - portal, powershell, cli, code](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-portal)
 
 [3. Securing data in ADLS](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-secure-data)
 
