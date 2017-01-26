@@ -25,26 +25,20 @@ Here's a great reference book:
 [Modern authentication with Azure Active Directory for Web applications
 2016, by Bertocci, Vittorio.] (http://mslibrary/SearchCenter/Pages/LibrarySimple.aspx?k=Title%3A%22Modern%20authentication%20with%20Azure%20Active%20Directory%20for%20Web%20applications%22)
 
-##Some items of interest:
+##For Reference - some items of interest:
 
 [1.Setting up Active Directory and Data Lake Store (includes java and .net sample)](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-end-user-authenticate-using-active-directory )
 
-[2. Getting started](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-portal)
+[2. Getting started - portal, cli's, sdk's](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-portal)
 
-[Getting started with Data Lake Storage using REST api](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-rest-api )
+[3. Securing data in ADLS](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-secure-data)
 
-[Securing a web API with Azure AD](https://github.com/Azure-Samples/active-directory-node-webapi)
+[4. Here's where sample data is](https://github.com/MicrosoftBigData/usql/tree/master/Examples/Samples/Data/AmbulanceData)
 
-##Here is how to use Azure AD web app to authenticate with ADLS and then perform other operations on ADLS:
- - [.Net SDK](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-net-sdk)
- - [Java SDK](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-java-sdk)
+[5. What is an Azure AD Tenant?](https://msdn.microsoft.com/en-us/library/azure/jj573650.aspx?#BKMK_WhatIsAnAzureAD)
 
-[Securing data in ADLS](https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-secure-data)
+[6. Securing a web API with Azure AD (fairly involved sample)](https://github.com/Azure-Samples/active-directory-node-webapi)
 
-[Use Curl](http://curl.haxx.se/)
+[7. Use Curl](http://curl.haxx.se/)
 
-[Here's where sample data is](https://github.com/MicrosoftBigData/usql/tree/master/Examples/Samples/Data/AmbulanceData)
-
-[What is an Azure AD Tenant?](https://msdn.microsoft.com/en-us/library/azure/jj573650.aspx?#BKMK_WhatIsAnAzureAD)
-
-[If you need to install Azure CLI](https://docs.microsoft.com/en-us/azure/xplat-cli-install)
+[8. If you need to install Azure CLI](https://docs.microsoft.com/en-us/azure/xplat-cli-install)
