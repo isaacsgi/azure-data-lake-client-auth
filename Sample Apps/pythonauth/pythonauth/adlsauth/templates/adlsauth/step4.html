@@ -1,0 +1,19 @@
+<html>
+<body>
+	<h1> Azure Data Lake Store + Azure AD REST AuthN Process </h1>
+	<h2> Step 4 </h2>
+	
+	Here is the File Status JSON for our Azure Data Lake Store <br><br>
+	
+	{{filestati}} <br><br>
+	<ul>
+    {% for ['FileStatus'] in filestati %}
+        <li>['FileStatus']['pathSuffix']</li>
+    {% endfor %}
+    </ul>
+	<form action='/adlsauth/step4/' method='POST'>
+		{% csrf_token %}
+		<input name='NextStep' type='submit' value='Next Step -->'/>
+	</form>
+</body>
+</html>

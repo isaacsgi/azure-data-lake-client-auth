@@ -1,0 +1,16 @@
+<html>
+<body>
+	<h1> Azure Data Lake Store + Azure AD REST AuthN Process </h1>
+	<h2> Step 3 </h2>
+	
+	Here's the access token that was returned in Step 2: <br><br>
+	{{token}} <br><br>
+	
+	We will use this token to authenticate to the Azure Data Lake API<br><br>
+		
+	<form action='/adlsauth/step3/' method='POST'>
+		{% csrf_token %}
+		<input name='NextStep' type='submit' value='Next Step -->'/>
+	</form>
+</body>
+</html>

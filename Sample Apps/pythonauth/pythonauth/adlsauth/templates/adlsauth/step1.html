@@ -1,0 +1,14 @@
+<html>
+<body>
+	<h1> Azure Data Lake Store + Azure AD REST AuthN Process </h1>
+	TODO: Change this to reflect ADLS process
+	
+			
+	<form action='/adlsauth/step1/' method='POST'>
+		{% csrf_token %}
+		<input name='LogInButton' type='submit' value='Log In'/>
+	</form>
+	<br><br>
+	{{output}}
+</body>
+</html>
