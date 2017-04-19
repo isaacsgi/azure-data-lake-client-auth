@@ -6,8 +6,9 @@ from django.conf import settings
 import logging
 import sys, json
 
-# Create your views here.
 
+# Create your views here.
+from json2html import *
 from django.http import HttpResponse
 from django.http import Http404
 from django.template import loader
@@ -119,12 +120,14 @@ def step3(request):
 		# OAUTH STEP 3 - go get the subscriptions
 		resp = azure_session.get(DATA_LAKE_URI, headers = {MS_API_VERSION_HEADER: MS_API_VERSION_DATA_LAKE_VALUE},params= {DATA_LAKE_OPERATION: DATA_LAKE_LIST_FOLDERS})
 		
-		print(">>Hello <<", end='\n', file=sys.stdout)
+		infoFromJson = resp.json()
+		print(">>Json Response <<", end='\n', file=sys.stdout)
 		print(resp.status_code, end='\n', file=sys.stdout)		
-		print(resp.json(), end='\n', file=sys.stdout)
-		context ['filestati'] = resp.json()
+		print(infoFromJson, end='\n', file=sys.stdout)
+		print("html from json:", end='\n', file=sys.stdout)
+		print (json2html.convert(json = infoFromJson), end='\n', file=sys.stdout)
 
-		return render(request, STEP_4_TEMPLATE_NAME, context)
+		return render(request, STEP_4_TEMPLATE_NAME, {'filestati': infoFromJson['FileStatuses']['FileStatus']})
 		
 def results(request, question_id):
     response = "You're looking at the results of question %s."

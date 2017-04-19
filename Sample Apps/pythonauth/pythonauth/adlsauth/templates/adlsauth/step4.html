@@ -4,13 +4,16 @@
 	<h2> Step 4 </h2>
 	
 	Here is the File Status JSON for our Azure Data Lake Store <br><br>
-	
-	{{filestati}} <br><br>
-	<ul>
-    {% for ['FileStatus'] in filestati %}
-        <li>['FileStatus']['pathSuffix']</li>
-    {% endfor %}
-    </ul>
+	 <br>
+	 <table border="1">
+		 <tr><th>File #</th><th>File Name</th><th>File Size</th></tr>
+     {% for filestatus in filestati %}
+	 <tr><td>File # {{ forloop.counter }}</td><td>{{ filestatus.pathSuffix }}</td><td>{{ filestatus.length }}</td></tr>
+     {% endfor %}
+</ul>
+</table>
+	<br>
+	<br>
 	<form action='/adlsauth/step4/' method='POST'>
 		{% csrf_token %}
 		<input name='NextStep' type='submit' value='Next Step -->'/>
