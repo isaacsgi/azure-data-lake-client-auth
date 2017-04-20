@@ -6,3 +6,6 @@ The sample uses Python Django to create Azure REST API calls and take the user t
 Azure Active Directory (AAD).  Once successfully authenticated, AAD provides a secure Bearer token that is then used via the
 ADLS REST API to enable that user's access to the ADLS instance.
 
+The flow for this app was based on this excellent multi-tenant example: https://github.com/sebastus/azure-python-authenticate
+
+The project also includes a working sample for reference of parts of the Django 'polls' tutorial from here: https://docs.djangoproject.com/en/1.10/intro/tutorial01/
