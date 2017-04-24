@@ -1,4 +1,10 @@
 <html>
+<script>
+	var form = document.getElementById("file-form");
+	document.getElementById("form-selected").addEventListener("click", function () {
+  form.submit();
+});
+</script>	
 <body>
 	<h1> Azure Data Lake Store + Azure AD REST AuthN Process </h1>
 	<h2> Step 4 </h2>
@@ -14,9 +20,15 @@
 </table>
 	<br>
 	<br>
-	<form action='/adlsauth/step4/' method='POST'>
+	<form id="file-form" action='/adlsauth/step4/' method='POST'>
 		{% csrf_token %}
-		<input name='NextStep' type='submit' value='Next Step -->'/>
+		<label>Click on a file:</label><br/>
+		<ul>
+     	{% for filestatus in filestati %}
+		<li>
+		<input type="submit" name="selected-file" value="{{ filestatus.pathSuffix }}">
+		</li>
+     {% endfor %}
 	</form>
 </body>
 </html>

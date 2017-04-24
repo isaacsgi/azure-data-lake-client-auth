@@ -117,7 +117,7 @@ def step3(request):
 		token = request.session['token']
 		azure_session = OAuth2Session(CLIENT_ID, redirect_uri = REDIRECT_URI, token=token)
 		
-		# OAUTH STEP 3 - go get the subscriptions
+		# OAUTH STEP 3 - go get the file status data
 		resp = azure_session.get(DATA_LAKE_URI, headers = {MS_API_VERSION_HEADER: MS_API_VERSION_DATA_LAKE_VALUE},params= {DATA_LAKE_OPERATION: DATA_LAKE_LIST_FOLDERS})
 		
 		infoFromJson = resp.json()
@@ -128,7 +128,44 @@ def step3(request):
 		print (json2html.convert(json = infoFromJson), end='\n', file=sys.stdout)
 
 		return render(request, STEP_4_TEMPLATE_NAME, {'filestati': infoFromJson['FileStatuses']['FileStatus']})
+
+def step4(request):
+
+	context = {'initialize':''}
+	constants = settings.CONSTANTS
+	STEP_5_TEMPLATE_NAME = constants['STEP_5_TEMPLATE_NAME']
+	CLIENT_ID = constants['CLIENT_ID']
+	REDIRECT_URI = constants['REDIRECT_URI']
+	MS_API_VERSION_HEADER = constants['MS_API_VERSION_HEADER']
+	MS_API_VERSION_HEADER_VALUE = constants['MS_API_VERSION_HEADER_VALUE']
+	MS_API_VERSION_DATA_LAKE_VALUE = constants['MS_API_VERSION_DATA_LAKE_VALUE']
+	DATA_LAKE_OPERATION = constants['DATA_LAKE_OPERATION']
+	DATA_LAKE_OPEN_FILE = constants['DATA_LAKE_OPEN_FILE']
+	DATA_LAKE_URI = constants['DATA_LAKE_URI']
+
+	if request.method == 'POST':
+
+		print (">> selected: ",request.POST['selected-file'])
+
+		# create a requests session with the token we got previously
+		token = request.session['token']
+		azure_session = OAuth2Session(CLIENT_ID, redirect_uri = REDIRECT_URI, token=token)
 		
+		# OAUTH STEP 3 - go get the subscriptions
+		resp = azure_session.get(DATA_LAKE_URI+request.POST['selected-file'], headers = {MS_API_VERSION_HEADER: MS_API_VERSION_DATA_LAKE_VALUE},params= {DATA_LAKE_OPERATION: DATA_LAKE_OPEN_FILE,'read':'true','allow_redirects':'True'})
+
+		print(">>Json Response <<", end='\n', file=sys.stdout)
+		print(resp.text, end='\n', file=sys.stdout)
+	
+	else: print(">>something else happened:", request)
+
+	return render(request, STEP_5_TEMPLATE_NAME, {'filecontent':resp.text})
+
+
+def step5(request):
+
+	return render(request, STEP_5_TEMPLATE_NAME, context)
+
 def results(request, question_id):
     response = "You're looking at the results of question %s."
     return HttpResponse(response % question_id)
